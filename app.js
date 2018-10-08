@@ -12,6 +12,9 @@ function displayPosition(name, title, description) {
 
 displayPosition('connor hansen', 'Data Analytics Consultant', 'Analyze data and create visualizations to provide key insights for directing the business.');
 
+console.log('------------------------------------------------------')
+
+
 // Using loops to print out the properties and values to create resume
 let me = {
     'Name:': "connor hansen",
