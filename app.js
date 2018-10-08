@@ -22,9 +22,9 @@ let me = {
 function objectPosition(person) {
     // person.Name = person.Name.toUpperCase();
     for (let i in person) {
-        // if (i = 'Name:') {
-        //     person[i] = person[i].toUpperCase();
-        // }
+        if (i == 'Name:') {
+            person[i] = person[i].toUpperCase();
+        }
         console.log(i + ' ' + person[i]);
     }
 };
@@ -49,9 +49,9 @@ function displaySkills(skilllist) {
 
         for (let p in skilllist) {
             if (skilllist[p][1] == false) {
-                console.log(skilllist[p][0]);
+                console.log('* ' + skilllist[p][0]);
             } else {
-                console.log("BAM: " + skilllist[p][0]);
+                console.log('* '+ "BAM: " + skilllist[p][0]);
             }
         }
 };
@@ -74,9 +74,9 @@ console.log("My skills:")
     for (let q in theseones) {
 
         if (theseones[q] == true) {
-            console.log("BAM: " + q);
+            console.log('* ' + "BAM: " + q);
         } else {
-            console.log(q);
+            console.log('* ' + q);
         }
     };
 };
